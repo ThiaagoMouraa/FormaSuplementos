@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203d2b">
+  <meta name="description" content="Conheça FORMA: um conceito de marca de suplementos para uma rotina em movimento. Explore a coleção demonstrativa.">
+  <title>FORMA — Sua rotina, em movimento.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="announcement">UM NOVO JEITO DE FAZER PARTE DA SUA ROTINA <span aria-hidden="true">↗</span></div>
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="FORMA — início">forma<span>®</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="Navegação principal">
+      <a href="#colecao">Suplementos</a><a href="#filosofia">Nossa essência</a><a href="#perguntas">Dúvidas</a>
+    </nav>
+    <button class="selection-button" type="button" aria-haspopup="dialog">Sua seleção <span id="selection-count">0</span></button>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> PARA TODOS OS SEUS MOVIMENTOS</p>
+        <h1 id="hero-title">O seu ritmo.<br>A sua <em>forma.</em></h1>
+        <p class="hero-description">Do primeiro passo à última repetição. Suplementos que fazem parte da rotina que você escolhe construir.</p>
+        <a class="button button-dark" href="#colecao">Encontre sua forma <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span class="small-symbol" aria-hidden="true">✳</span><p>Movimento é para todo mundo.<br><strong>Inclusive para você.</strong></p></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustração de embalagens conceituais FORMA: proteína e creatina, em verde e lima">
+        <span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span>
+        <span class="art-caption">NUTRIÇÃO PARA UMA VIDA EM MOVIMENTO</span>
+        <div class="round-stamp">TODO DIA<br><span>UM NOVO</span><br>COMEÇO ↗</div>
+        <div class="jar hero-jar jar-green"><div class="jar-lid"></div><div class="jar-body"><span class="pack-logo">forma®</span><span class="pack-rule"></span><span class="pack-name">WHEY<br>PROTEIN</span><span class="pack-detail">ESSENTIAL SERIES</span><span class="pack-flavor">CACAU • 900 g</span><span class="pack-mark">↗</span></div></div>
+        <div class="jar hero-small jar-lime"><div class="jar-lid"></div><div class="jar-body"><span class="pack-logo">forma®</span><span class="pack-rule"></span><span class="pack-name">CREA<br>TINA</span><span class="pack-detail">ESSENTIAL SERIES</span><span class="pack-flavor">SEM SABOR • 300 g</span></div></div>
+        <span class="art-bottom">MENOS COMPLICAÇÃO. MAIS MOVIMENTO.</span>
+      </div>
+    </section>
+    <div class="values-strip" aria-label="Valores da marca"><span>Seu corpo, seu ritmo</span><b aria-hidden="true">✳</b><span>Essencial por natureza</span><b aria-hidden="true">✳</b><span>Feito para sua rotina</span><b aria-hidden="true">✳</b><span>Movimento que conecta</span></div>
+    <section class="collection section" id="colecao" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="eyebrow">O ESSENCIAL, BEM FEITO</p><h2 id="collection-title">Pequenos hábitos.<br>Novas possibilidades.</h2></div><p>Encontre o que combina com seu momento.<br>Uma coleção simples, como deve ser.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar coleção"><button type="button" class="filter active" data-filter="all" aria-pressed="true">Todos os produtos</button><button type="button" class="filter" data-filter="proteina" aria-pressed="false">Proteínas</button><button type="button" class="filter" data-filter="creatina" aria-pressed="false">Creatina</button></div>
+      <div class="product-grid">
+        <article class="product" data-category="proteina"><div class="product-image cream"><span class="product-tag">ESSENCIAL</span><div class="jar product-jar jar-green" role="img" aria-label="Embalagem ilustrada de Whey Protein sabor cacau"><div class="jar-lid"></div><div class="jar-body"><span class="pack-logo">forma®</span><span class="pack-rule"></span><span class="pack-name">WHEY<br>PROTEIN</span><span class="pack-detail">ESSENTIAL SERIES</span><span class="pack-flavor">CACAU • 900 g</span></div></div><span class="image-index">01 / FORMA</span></div><div class="product-info"><div><h3>Whey Protein</h3><p>Cacau · 900 g</p></div><button type="button" class="add-button" data-product="Whey Protein — Cacau" aria-label="Adicionar Whey Protein cacau à seleção">↗</button></div></article>
+        <article class="product" data-category="creatina"><div class="product-image sage"><span class="product-tag">SUA ROTINA</span><div class="jar product-jar compact jar-lime" role="img" aria-label="Embalagem ilustrada de Creatina sem sabor"><div class="jar-lid"></div><div class="jar-body"><span class="pack-logo">forma®</span><span class="pack-rule"></span><span class="pack-name">CREA<br>TINA</span><span class="pack-detail">ESSENTIAL SERIES</span><span class="pack-flavor">SEM SABOR • 300 g</span></div></div><span class="image-index">02 / FORMA</span></div><div class="product-info"><div><h3>Creatina</h3><p>Sem sabor · 300 g</p></div><button type="button" class="add-button" data-product="Creatina — Sem sabor" aria-label="Adicionar Creatina à seleção">↗</button></div></article>
+        <article class="product" data-category="proteina"><div class="product-image pink"><span class="product-tag">ORIGEM VEGETAL</span><div class="jar product-jar jar-rose" role="img" aria-label="Embalagem ilustrada de proteína vegetal sabor baunilha"><div class="jar-lid"></div><div class="jar-body"><span class="pack-logo">forma®</span><span class="pack-rule"></span><span class="pack-name">PLANT<br>PROTEIN</span><span class="pack-detail">ESSENTIAL SERIES</span><span class="pack-flavor">BAUNILHA • 600 g</span></div></div><span class="image-index">03 / FORMA</span></div><div class="product-info"><div><h3>Plant Protein</h3><p>Baunilha · 600 g</p></div><button type="button" class="add-button" data-product="Plant Protein — Baunilha" aria-label="Adicionar Plant Protein à seleção">↗</button></div></article>
+      </div>
+      <p class="demo-note">Coleção conceitual. Produtos e embalagens fictícios, sem venda disponível.</p>
+    </section>
+    <section class="philosophy section" id="filosofia" aria-labelledby="philosophy-title"><div class="philosophy-art" aria-hidden="true"><span>f.</span><div class="philosophy-circle"></div><p>ENCONTRE SEU EQUILÍBRIO ↗</p></div><div class="philosophy-copy"><p class="eyebrow">MAIS QUE UMA REPETIÇÃO</p><h2 id="philosophy-title">A melhor forma<br>é a <em>sua.</em></h2><p>Não existe uma única maneira de se movimentar. Existe o treino de hoje, a caminhada de amanhã e a pausa quando você precisa.</p><p>A FORMA nasce dessa ideia: tornar o essencial parte do dia a dia, com espaço para você seguir no seu próprio ritmo.</p><a class="text-link" href="#perguntas">Conheça a proposta <span aria-hidden="true">↗</span></a></div></section>
+    <section class="faq section" id="perguntas" aria-labelledby="faq-title"><div><p class="eyebrow">VAMOS SIMPLIFICAR</p><h2 id="faq-title">Bom saber.</h2></div><div class="faq-items"><details><summary>Os produtos estão à venda?<span aria-hidden="true">+</span></summary><p>Esta é uma página demonstrativa de uma marca fictícia. A seleção permite explorar a interface; não há compra, pagamento ou envio.</p></details><details><summary>Como escolher um suplemento?<span aria-hidden="true">+</span></summary><p>A escolha depende das suas necessidades individuais. Converse com um profissional de saúde qualificado para avaliar o que faz sentido para você.</p></details><details><summary>O que acontece com minha seleção?<span aria-hidden="true">+</span></summary><p>Os itens ficam disponíveis apenas enquanto esta página estiver aberta. Nenhum dado é enviado a um servidor.</p></details></div></section>
+    <section class="closing"><p class="eyebrow">UM PASSO DE CADA VEZ</p><h2>Vamos nos movimentar?</h2><a class="button button-lime" href="#colecao">Explore a coleção <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><a class="logo" href="#inicio" aria-label="FORMA — voltar ao início">forma<span>®</span></a><p>Seu ritmo. Sua rotina. Sua forma.</p><small>© <span id="year">2026</span> FORMA · Marca fictícia. Projeto demonstrativo.</small></footer>
+  <dialog id="selection-dialog" aria-labelledby="selection-title"><div class="dialog-heading"><h2 id="selection-title">Sua seleção</h2><button type="button" class="close-button" aria-label="Fechar seleção">×</button></div><p class="dialog-description">Explore seus favoritos. Esta seleção é demonstrativa.</p><ul id="selection-list"></ul><p id="empty-selection">Sua seleção está vazia. Explore a coleção para adicionar um produto.</p><button type="button" id="clear-selection" class="button button-dark" disabled>Limpar seleção</button><p class="demo-note">Nenhuma compra será realizada.</p></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
